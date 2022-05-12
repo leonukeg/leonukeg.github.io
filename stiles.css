@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*menu - navbar*/
+.wrapper{
+    width: 100vw;
+    height: 11vh;
+    background-color: #365a08 ;
+    color: #fff;
+    position: fixed;
+    
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.brand span{
+    color:#72eb3a;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+    
+}
+.menu li{
+    list-style: none;
+    
+   
+}
+
+.menu a{
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.menu a:hover{
+    background-color: #72eb3a;
+    transition: ease-in .5s;
+    
+}
+.menu .active{
+    background-color: #72eb3a;
+}
+
+/*welcome setion*/
+
+#welcome_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#1b1d24;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+#welcome_section h1{
+    font-size: 5rem;
+}
+
+#welcome_section p{
+    color: #72eb3a;
+    font-size: 2rem;
+}
+ /*project*/
+
+#projects{
+    background-color: #1b1d24;
+    width: 100vw;
+    color: #fff;
+}
+
+.projectsHeadings{
+    text-align: center;
+    width: 100vw;
+    padding: 4.5rem 1rem 2rem 1rem;
+    color: #fff;
+}
+
+.projectsHeadings h2{
+    font-size: 2.5rem;
+}
+
+#projects .container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-tile img{
+    width: 150px;
+}
+
+@media (max-width: 650px){
+    #projects{
+        padding: 6rem 1rem;
+    }
+
+    #projects .container{
+        grid-template-columns: 1fr;
+    }
+}
+.card_title{
+    font-size: 1rem;
+}
+
+.btn{
+    background-color: #365a08;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px gray;
+}
+
+.btn:hover{
+    background-color: #72eb3a;
+    box-shadow: none;
+    
+}
+
+.btn a{
+    color: #ffff;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.project-tile{
+    height: 350px;
+    margin: 1rem;
+}
+
+/* about */
+
+#about{
+    background-color: #5d9d0b;
+}
+
+.about{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.about > div{
+    width: 50%;
+    padding: 0px 50px 10px 10px;
+}
+.about img{
+  border-radius: 100px;
+ }
+
+.divider{
+    height: 4px;
+    width: 300px;
+    background-color: black;
+    margin-top: 2.5px;
+    margin-bottom: 1em;
+}
+
+.about p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width: 650px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+ /* contact */
+
+#contact{
+
+    width: 100%;
+    height: 50vh;
+    background-color: #5d9d0b;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    
+
+}
+
+
+.sotial{
+    padding: 2rem;
+}
+
+.sotial a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 20px;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    text-align: center; 
+    background-color: #1b1d24;
+}
+
+footer h6{
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+} 
+
